@@ -32,10 +32,9 @@ function Home() {
 							{cars.map((car) => (
 								<Card titulo={car.modelo.nome} imageURL={car.imagens[0]} resumo={car.preco}/>
 							))}
-							<Card titulo={"João"} imageURL={"https://mdbootstrap.com/img/new/avatars/6.jpg"} resumo={"CEO"} />
-							<Card titulo={"Maria"} imageURL={"https://mdbootstrap.com/img/new/avatars/7.jpg"} resumo={"CTO"} />
-							<Card titulo={"Pedro"} imageURL={"https://mdbootstrap.com/img/new/avatars/8.jpg"} resumo={"CTO"} />
-							<Card titulo={"Pedro"} imageURL={"https://mdbootstrap.com/img/new/avatars/8.jpg"} resumo={"CTO"} />
+							<Card titulo={"Volkswagen Golf"} imageURL={"https://th.bing.com/th/id/R.183a7dba17aa4ab3100663610543f59b?rik=wVJaHXqDr2Pm9w&riu=http%3a%2f%2fperformancedrive.com.au%2fwp-content%2fuploads%2f2017%2f04%2f2017-Volkswagen-Golf-R-1280x834.jpg&ehk=%2bp6Evl4nm0BLCbamF0zzHGFA109P1RFpxllAs06avSo%3d&risl=&pid=ImgRaw&r=0"} resumo={"R$20.000"} />
+							<Card titulo={"Peugeot 208"} imageURL={"https://media.autoexpress.co.uk/image/private/s--HQ4B6C4W--/v1587553881/autoexpress/2020/04/Peugeot%20208%202020%20UK%20pictures-29.jpg"} resumo={"R$35.500,75"} />
+							<Card titulo={"Lamborghini Urus"} imageURL={"https://media.autoexpress.co.uk/image/private/s--bVqsOvXj--/v1562246223/autoexpress/2018/04/gialloauge_road_dynamic_10.jpg"} resumo={"R$480.900,35"} />
 						</div>
 						<button className='btn-lg btn-primary text-center mt-5'>Ver Mais</button>
 					</section>
