@@ -105,20 +105,20 @@ export default function NavBar() {
 							{/* <!-- Collapsible wrapper --> */}
 							{/* <!-- Right elements --> */}
 							<div className="d-flex align-items-center">
-								<button
-									type="button"
+								<NavLink
 									className="btn btn-link px-3 mb-1 me-2"
 									aria-controls="#picker-editor"
-								>
+									to={"/login"}
+									>
 									Entrar
-								</button>
-								<button
-									type="button"
+								</NavLink>
+								<NavLink
 									className="btn btn-primary mb-1 me-lg-3"
 									aria-controls="#picker-editor"
-								>
-									Registrar
-								</button>
+									to={"/signup"}
+									>
+										Registrar
+								</NavLink>
 							</div>
 							{/* <!-- Right elements --> */}
 						</div>

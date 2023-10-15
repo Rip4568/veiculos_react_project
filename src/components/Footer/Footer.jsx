@@ -3,9 +3,9 @@ import React from 'react'
 function Footer() {
 	return (
 		/* < !--Footer -- > */
-		<footer className="text-center text-lg-start bg-light text-muted">
+		<footer className="text-center text-lg-start bg-dark text-muted py-5">
 			{/* <!-- Section: Links  --> */}
-			<section className="">
+			<section className="text-white">
 				<div className="container text-center text-md-start mt-5">
 					{/* <!-- Grid row --> */}
 					<div className="row mt-3">

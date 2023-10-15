@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Login() {
+function Login() {
 	return (
-		<form>
+		<form className='container card card-body'>
 			{/* <!-- Email input --> */}
 			<div class="form-outline mb-4">
 				<input type="email" id="form1Example1" class="form-control" />
@@ -36,3 +36,5 @@ export default function Login() {
 		</form>
 	)
 }
+
+export default Login;

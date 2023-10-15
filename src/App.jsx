@@ -11,8 +11,14 @@ import About from './pages/About/About'
 import Sell from './pages/Sell/Sell'
 import Buy from './pages/Buy/Buy';
 import Footer from './components/Footer/Footer';
+import Login from './pages/Authentication/Login';
+import Signup from './pages/Authentication/Signup'
+
 
 function App() {
+	const [token, setToken] = useState(null);
+	const [refreshToken, setRefreshToken] = useState(null);
+	const [isAuthenticated, setIsAuthenticated] = useState(false);
 	return (
 		<>
 			<div id="preview" className="preview">
@@ -23,6 +29,16 @@ function App() {
 						<Route path="/about" element={<About />} />
 						<Route path="/sell" element={<Sell />} />
 						<Route path='/buy' element={<Buy />} />
+						<Route path='/login' element={<Login 
+							token={token} 
+							setToken={setToken} 
+							isAuthenticated={isAuthenticated} 
+							setIsAuthenticated={setIsAuthenticated} />} />
+						<Route path='/signup' element={<Signup 
+							token={token} 
+							setToken={setToken} 
+							isAuthenticated={isAuthenticated} 
+							setIsAuthenticated={setIsAuthenticated} />} />
 					</Routes>
 					<Footer />
 				</BrowserRouter>
