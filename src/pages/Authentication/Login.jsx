@@ -2,7 +2,8 @@ import React from 'react'
 
 function Login() {
 	return (
-		<form className='container card card-body'>
+		<form className='container card card-body my-5' style={{ maxWidth: '24rem', backgroundColor: '#f5f5f5' }}>
+			<h1>Faça o seu login</h1>
 			{/* <!-- Email input --> */}
 			<div class="form-outline mb-4">
 				<input type="email" id="form1Example1" class="form-control" />
